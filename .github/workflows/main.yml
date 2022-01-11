@@ -14,7 +14,14 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: java version check
+        run: java -version
+        
+      - name: mvn version check
+        run: mvn --version
+        
+      - name: nginx version check
+        run: nginx -v
+        
+      - name: docker version check
+        run: docker -v
